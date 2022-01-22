@@ -3,12 +3,14 @@ import Nav from './components/Nav';
 import About from './components/About';
 
 function App() {
-  return(
+  return (
     <div>
       <Nav></Nav>
       <main>
+        <ContactForm></ContactForm>
+        <Gallery currentCategory={currentCategory}></Gallery>
         <About></About>
-      </main> 
+      </main>
     </div>
   );
 }
